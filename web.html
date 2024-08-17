@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id=all>
+        <div>
+            <div class="top bar">
+                <div>
+                    <p class="contact"> Online Fashion store</p>
+                    <input id="serc" type="text" placeholder="Search.." name="search">
+                    <button class="fa fa-search but" type="submit"></button>
+
+                </div>
+            </div>
+
+
+            <header class="nav-bar">
+                <div id="navigation">
+                    <a href="web.html"> <img class="i1" src="image/M-S-Logo.jpg" alt="M&S logo"></a>
+                </div>
+                <div class="nav">
+                    <nav class="nav-con">
+                        <ul id="a1">
+                            <li class="navigationbar" id="navbar"><a href="web.html">Home</a></li>
+                            <li class="navigationbar"><a href="web2.html">Man</a></li>
+                            <li class="navigationbar"><a href="web3.html">Woman</a></li>
+                            <li class="navigationbar"><a href="web4.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <hr>
+            <div class="slideshow-containar">
+                <div class="myslide fade">
+                    <div class="numbertext">
+                        <img src="image/image1.jpg" width="500px" height="250px">
+                    </div>
+                </div>
+                <div class="myslide fade">
+                    <div class="numbertext">
+                        <img src="image/image2.jpeg" width="500px" height="250px">
+                    </div>
+                </div>
+                <div class="myslide fade">
+                    <div class="numbertext">
+                        <img src="image/image3.jpg" width="500px" height="250px">
+                    </div>
+                </div>
+                <div class="myslide fade">
+                    <div class="numbertext">
+                        <img src="image/image4.jpg" width="500px" height="250px">
+                    </div>
+                </div>
+                <div class="myslide fade">
+                    <div class="numbertext">
+                        <img src="image/image5.jpg" width="500px" height="250px">
+                    </div>
+                </div>
+                <div class="myslide fade">
+                    <div class="numbertext">
+                        <img src="image/image6.jpg" width="500px" height="250px">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("myslide");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 3500); // Change image every 10 seconds
+                }
+            </script>
+
+            <div id="main">
+                <img class="deal" src="image/main-qimg-3ceb7f8530ca08898dc896fbe8376de9.jpg" alt="logo">
+            </div>
+            <br>
+            <br>
+            <div>
+                <a href=""><img class="i2" src="image/calasi.jpg" alt="funky"></a>
+                <a href=""><img class="i3" src="image/lawn2.jpg" alt="lawn"></a>
+                <span class="s1">Funky</span>
+                <span class="s1" id="s3"> Lawn </span>
+            </div>
+            <div>
+                <a href=""><img class="i2" src="image/1 (1).jpg" alt="men"></a>
+                <a href=""><img class="i3" src="image/girl acc.jpg" alt="girl's accessories"></a>
+                <span class="s1">Men's Wear</span>
+                <span class="s1" id="s2">Girl's Accessories</span>
+            </div>
+
+        </div>
+
+
+        <footer class="foo ">
+            <div class="about">
+                <h4 class="a1">About Us</h4>
+                <p class="p1"> <b> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga aperiam sequi, a suscipit ipsum eveniet minus odio deleniti repellat quas voluptatibus hic veritatis quis sunt voluptates quisquam incidunt accusamus perspiciatis.</b></p>
+                <h4 class="a1">Join Our Monthly Newsletter </h4>
+                <form>
+                    <div>
+                        <input class="formcontrol" type="text">
+                        <i class="fa fa-send"></i>
+                    </div>
+                </form>
+            </div>
+            <div class="ext content">
+                <a href="" class="fa fa-facebook"></a>
+                <a href="" class="fa fa-twitter"></a>
+                <a href="" class="fa fa-instagram"></a>
+                <a href="" class="fa fa-google"></a>
+            </div>
+
+        </footer>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

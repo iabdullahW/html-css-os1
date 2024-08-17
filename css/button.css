@@ -1,0 +1,50 @@
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 2px;
+    border-radius: 50px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    /* margin-left: 30%; */
+    display: flex;
+    justify-content: end;
+}
+
+.fa-twitter {
+    background: lightskyblue;
+    color: white;
+}
+
+.fa-send {
+    background: rgb(183, 204, 204);
+    color: white;
+}
+
+.fa-instagram {
+    background: rgb(224, 36, 140);
+    color: white;
+}
+
+.fa-google {
+    background: rgb(228, 105, 89);
+    color: white;
+}
+
+.fa-search {
+    background-color: black;
+    color: rgb(239, 240, 239);
+    position: absolute;
+    border-radius: 0px;
+    left: 1020px;
+    top: 15px;
+}
